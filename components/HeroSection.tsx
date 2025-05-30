@@ -8,7 +8,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-red-50 dark:bg-primary-950 md:bg-blue-50 md:dark:bg-primary-950 lg:bg-pink-50 lg:dark:bg-pink-950">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-red-50 dark:bg-primary-950 md:bg-blue-50 dark:md:bg-blue-950 lg:bg-pink-50 lg:dark:bg-pink-950">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-float"></div>
