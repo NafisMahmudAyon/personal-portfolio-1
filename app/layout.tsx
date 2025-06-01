@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AspectThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+        <AspectThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
         </AspectThemeProvider>
       </body>
