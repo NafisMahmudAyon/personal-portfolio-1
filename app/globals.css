@@ -17,9 +17,12 @@
 	--color-primary-950: #31175e;
 
 	--color-card: hsl(220, 25%, 8%);
+	--color-card-foreground: hsl(208, 35%, 93%);
+	--color-background: hsl(220, 27%, 6%);
+	--color-foreground: hsl(220, 9%, 95%);
 
 	--animate-float: float 3s ease-in-out infinite;
-  --animate-fade-in: fade-in 0.6s ease-out;
+	--animate-fade-in: fade-in 0.6s ease-out;
 
 	@keyframes float {
 		0% {
@@ -36,31 +39,43 @@
 	@keyframes fade-in {
 		0% {
 			opacity: 0;
-      transform: translateY(20px);
+			transform: translateY(20px);
 		}
 		100% {
 			opacity: 1;
-      transform: translateY(0px);
+			transform: translateY(0px);
 		}
 	}
 }
 
 .gradient-text {
-	@apply bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent;
+	@apply bg-gradient-to-r from-purple-800 via-pink-600 to-purple-600 dark:from-purple-400 dark:via-pink-400 dark:to-purple-600 bg-clip-text text-transparent;
 }
 
 .hero-gradient {
 	background: linear-gradient(
 		135deg,
-		hsl(220, 27%, 6%) 0%,
-		hsl(240, 25%, 8%) 50%,
-		hsl(260, 30%, 10%) 100%
+		hsl(192, 45%, 55%) 0%,
+		var(--color-primary-200) 50%,
+		hsl(192, 59%, 29%) 100%
 	);
+	&:is(.dark *) {
+		background: linear-gradient(
+			135deg,
+			hsl(217, 28%, 15%) 0%,
+			hsl(240, 35%, 13%) 50%,
+			hsl(260, 30%, 10%) 100%
+		);
+	}
 }
 
 body {
-	background-color: hsl(220 27% 6%);
-	color: hsl(220 9% 95%);
+	background-color: var(--color-foreground);
+	color: var(--color-background);
+	&:is(.dark *) {
+		background-color: var(--color-background);
+		color: var(--color-foreground);
+	}
 }
 
 html {

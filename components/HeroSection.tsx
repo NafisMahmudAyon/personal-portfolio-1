@@ -11,8 +11,8 @@ const HeroSection = () => {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden hero-gradient">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary-800/20 dark:bg-purple-500/20 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-violet-800/20 dark:bg-blue-500/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
@@ -24,7 +24,7 @@ const HeroSection = () => {
             a Frontend Developer
           </h1>
 
-          <p className="text-xl md:text-2xl text-primary-200 dark:text-primary-800 mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-primary-800 dark:text-primary-200 mb-8 max-w-2xl mx-auto leading-relaxed">
             I build modern, performant web experiences using React, Next.js, and Tailwind CSS.
             Passionate about creating intuitive user interfaces and seamless digital experiences.
           </p>
@@ -33,7 +33,7 @@ const HeroSection = () => {
             <Button
               size="large"
               onClick={() => scrollToSection('projects')}
-              className="px-8 py-3 text-lg"
+              className="px-8 py-3 text-lg border border-primary-200/30 hover:border-primary-800/30 dark:border-primary-800/30 dark:hover:border-primary-200/30 transition-all duration-300"
             >
               View Projects
             </Button>

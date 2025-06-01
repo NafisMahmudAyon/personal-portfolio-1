@@ -63,7 +63,7 @@ const ProjectsSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Featured <span className="gradient-text">Projects</span>
           </h2>
-          <p className="text-xl text-primary-200 dark:text-primary-800 max-w-2xl mx-auto">
+          <p className="text-xl text-primary-800 dark:text-primary-200 max-w-2xl mx-auto">
             Here are some of my recent projects that showcase my skills in frontend development
             and problem-solving abilities.
           </p>
