@@ -10,7 +10,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
   const isSwitched = theme === 'dark' ? true : false
   const handleSwitchChange = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark')
-  // }
+  }
 
   return (
 
