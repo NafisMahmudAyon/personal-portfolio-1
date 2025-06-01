@@ -1,23 +1,23 @@
 'use client'
-import { Switch } from '@/components/aspect-ui'
-import { UseThemeSwitcher } from '@/components/UseThemeSwitcher'
-import { Moon, Sun } from "lucide-react"
+// import { Switch } from '@/components/aspect-ui'
+// import { UseThemeSwitcher } from '@/components/UseThemeSwitcher'
+// import { Moon, Sun } from "lucide-react"
 import React from 'react'
 import './example.css'
 
 const layout = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = UseThemeSwitcher()
-  const isSwitched = theme === 'dark' ? true : false
-  const handleSwitchChange = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark')
-  }
+  // const [theme, setTheme] = UseThemeSwitcher()
+  // const isSwitched = theme === 'dark' ? true : false
+  // const handleSwitchChange = () => {
+  //   setTheme(theme === 'dark' ? 'light' : 'dark')
+  // }
 
   return (
 
     <>
 
       {children}
-      <Switch checked={isSwitched}
+      {/* <Switch checked={isSwitched}
         onChange={handleSwitchChange}
         activeSwitchIcon={<Moon className='text-primary-200' />}
         deactiveSwitchIcon={<Sun className='text-primary-900' />}
@@ -28,7 +28,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
         deactiveClassName='bg-primary-900'
         activeSwitchClassName='bg-primary-900'
         deactiveSwitchClassName='bg-primary-200'
-      />
+      /> */}
 
     </>
   )
